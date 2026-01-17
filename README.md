@@ -26,10 +26,10 @@ reduce food waste, and stay aligned with fitness goals.
 - AI: OpenAI for recipe generation and optional image generation.
 
 ## Screenshots
+<img width="1918" height="862" alt="Screenshot 2026-01-18 030048" src="https://github.com/user-attachments/assets/37ba8b03-ec87-438e-ab2c-6a32dd8588cd" />
+<img width="1913" height="867" alt="Screenshot 2026-01-18 025821" src="https://github.com/user-attachments/assets/0d9f1928-1f9d-4848-99d5-85ea0489ea4a" />
+<img width="1918" height="863" alt="Screenshot 2026-01-18 025735" src="https://github.com/user-attachments/assets/978075a1-96df-45e5-9e48-9dbf51784cec" />
 
-![Home screen](public/mainpage.png)
-![Ingredient input and profile](public/recipe1.jpg)
-![Branding](public/logo.png)
 
 ## Local Development
 
