@@ -1,6 +1,11 @@
 import './App.css'
+import { useState } from 'react'
+
 
 function App() {
+  const [item, setItem] = useState('')
+  const [fridgeItems, setFridgeItems] = useState([])
+
   return (
     <>
       <nav className="navbar navbar-light bg-light">
@@ -30,7 +35,16 @@ function App() {
 
           {/* Form column */}
           <div className="col-md-6">
-            <form className="mt-0">
+            <form
+                className="mb-3"
+                onSubmit={(e) => {
+                  e.preventDefault()
+                  if (item.trim() === '') return
+                  setFridgeItems([...fridgeItems, item])
+                  setItem('')
+                }}
+              >
+
               <div className="mb-5">
                 <label
                   htmlFor="exampleFormControlInput1"
@@ -38,17 +52,30 @@ function App() {
                 >
                   What's in your fridge?
                 </label>
+                <div className="d-flex">
                 <input
-                  type="text"
-                  className="form-control"
-                  id="exampleFormControlInput1"
-                  placeholder="one box of pasta"
-                />
+                type="text"
+                className="form-control"
+                id="exampleFormControlInput1"
+                placeholder="one box of pasta"
+                value={item}
+                onChange={(e) => setItem(e.target.value)}
+              />
+              <button className='ml-2'>Add</button>
+              </div>
               </div>
             </form>
+                  <div className="d-flex flex-wrap gap-5">
+        {fridgeItems.map((food, index) => (
+          <div key={index} className="sticky-note mr-2 mb-2">
+            {food}
+          </div>
+        ))}
+      </div>
           </div>
 
         </div>
+        <button onClick="" class="btn btn-warning btn-lg mb-5">Start Cooking</button>
       </div>
     </>
   )

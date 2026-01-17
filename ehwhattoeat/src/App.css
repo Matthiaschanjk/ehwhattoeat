@@ -40,3 +40,13 @@
 .read-the-docs {
   color: #888;
 }
+
+.sticky-note {
+  background: #fff9a3;
+  padding: 15px;
+  width: 160px;
+  min-height: 80px;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  font-weight: 500;
+}
