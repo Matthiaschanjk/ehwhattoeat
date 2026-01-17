@@ -251,7 +251,7 @@ function App() {
       <div className="back">
         <div className="back-content">
           <img src="logowhite.png" alt="logo" width="auto" height="200px"/>
-          <strong>Hover Me</strong>
+          <strong>Reveal Recipe</strong>
         </div>
       </div>
 
@@ -303,15 +303,18 @@ function App() {
             </div>
 
             <p className="card-footer">
-              30 Mins &nbsp; | &nbsp; 1 Serving
+              30 Mins &nbsp; | &nbsp; 1 Serving | &nbsp; 500 Calories
             </p>
           </div>
         </div>
       </div>
     </div>
   </div>
-  
 </div>
+  <div>
+    <h2>Title</h2>
+    <p>Instructions how to make meal</p>
+  </div>
     </>
 
     
